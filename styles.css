@@ -24,3 +24,8 @@
 .system-number{padding-top:0;line-height:1}
 .reasoning-method li{display:grid;grid-template-columns:auto 1fr;align-items:baseline}
 .reasoning-method li>span{padding-top:0;line-height:1}
+.experience-budget span{margin-left:2px}
+
+@media(min-width:761px){
+  .flagship-copy{transform:translateY(-8px)}
+}
