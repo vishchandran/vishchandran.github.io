@@ -8,12 +8,8 @@
 .experience-note{color:#53677f}
 
 /* Hero spacing refinement */
-.hero{padding-top:60px}
-.evidence-strip>div+div{padding-left:54px}
-.evidence-strip>div+div span{left:20px}
+.hero{padding:60px 0 70px}
 
 @media(max-width:760px){
-  .hero{padding-top:36px}
-  .evidence-strip>div+div{padding-left:32px}
-  .evidence-strip>div+div span{left:0}
+  .hero{padding:36px 0 48px}
 }
