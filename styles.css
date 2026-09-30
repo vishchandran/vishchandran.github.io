@@ -42,3 +42,6 @@
 .signal-items{display:flex;flex-wrap:wrap;gap:8px 36px}
 .signal-items>span{position:relative}
 .signal-items>span+span::before{content:"·";position:absolute;left:-20px}
+
+/* Optical heading alignment */
+.leadership .section-intro h2{margin-left:-1px}
