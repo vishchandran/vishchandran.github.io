@@ -56,7 +56,7 @@
             <div class="actions"><a class="button primary" href="https://github.com/vishchandran/epos">View EPOS repository</a><a class="text-link" href="https://github.com/vishchandran/epos/tree/main/docs/architecture">Architecture evidence</a></div>
           </div>
           <figure class="architecture" aria-labelledby="architecture-caption">
-            <div class="diagram-heading"><span class="small-label">Banking capability model</span><span class="diagram-mark" aria-hidden="true">EPOS / 01</span></div>
+            <div class="diagram-heading"><span class="small-label">Banking capability model</span></div>
             <div class="diagram-tier"><span class="tier-label">Banking domains</span><div class="domain-nodes"><span>Customer &amp; Party</span><span>Accounts &amp; Ledger</span><span>Products &amp; Agreements</span></div></div>
             <div class="diagram-connector" aria-hidden="true"><i></i><i></i><i></i></div>
             <div class="application-node"><span class="node-icon" aria-hidden="true">◈</span><div><strong>Application &amp; domain boundaries</strong><span>Use cases · Business rules · Contracts</span></div></div>
@@ -67,11 +67,11 @@
           </figure>
         </div>
         <div class="epos-pillars">
-          <div><span class="pillar-index">01</span><strong>Understand the bank</strong><p>Domains, capabilities, and business boundaries</p></div>
-          <div><span class="pillar-index">02</span><strong>Shape the system</strong><p>Architecture, engineering foundations, and operational concerns</p></div>
-          <div><span class="pillar-index">03</span><strong>Govern the evolution</strong><p>Releases, dependencies, decisions, AI intersection, and platform direction</p></div>
+          <div><strong>Understand the bank</strong><p>Domains, capabilities, and business boundaries</p></div>
+          <div><strong>Shape the system</strong><p>Architecture, engineering foundations, and operational concerns</p></div>
+          <div><strong>Govern the evolution</strong><p>Releases, dependencies, decisions, AI intersection, and platform direction</p></div>
         </div>
-        <div class="program-signal"><strong>Program lens</strong><span>Workstreams · Cross-team dependencies · Program risks · Constraint mutation · Production readiness</span></div>
+        <div class="program-signal"><strong>Program lens</strong><span class="signal-items"><span>Workstreams</span><span>Cross-team dependencies</span><span>Program risks</span><span>Constraint mutation</span><span>Production readiness</span></span></div>
       </article>
 
       <div class="applied-heading" id="applied">
@@ -80,15 +80,15 @@
       </div>
       <div class="applied-list">
         <article class="system-row" aria-labelledby="payment-title">
-          <div class="system-heading"><span class="system-number">01</span><div><h3 id="payment-title">Payment Simulator</h3><p>Resilient Payment Processing</p><span class="text-status">Independent project · Active / evolving</span></div></div>
+          <div class="system-heading"><div><h3 id="payment-title">Payment Simulator</h3><p>Resilient Payment Processing</p><span class="text-status">Independent project · Active / evolving</span></div></div>
           <div class="system-content"><p>A learning simulator for the payment transaction lifecycle and resilience patterns: idempotency, transaction state, outbox processing, asynchronous work, retries, recovery, routing, authorization, sensitive-data handling, and settlement concepts.</p><div class="tag-list" aria-label="Payment Simulator focus areas"><span>Idempotency</span><span>Outbox</span><span>Async Processing</span><span>Reconciliation</span></div><div class="text-links"><a href="https://github.com/vishchandran/payment-sim">View repository</a><a class="interactive-link" href="https://payment-sim-visualizer-lab.vercel.app/">Open Interactive Architecture</a></div></div>
         </article>
         <article class="system-row" aria-labelledby="switch-title">
-          <div class="system-heading"><span class="system-number">02</span><div><h3 id="switch-title">Hybrid Switch Platform</h3><p>Payment Switching &amp; Modernization</p><span class="text-status">Independent project · Active / evolving</span></div></div>
+          <div class="system-heading"><div><h3 id="switch-title">Hybrid Switch Platform</h3><p>Payment Switching &amp; Modernization</p><span class="text-status">Independent project · Active / evolving</span></div></div>
           <div class="system-content"><p>A payment-switch simulator focused on ATM/POS transaction flows, BIN-based routing, authorization, failover, stand-in processing, reversals, event-driven processing, reconciliation, and operational readiness.</p><div class="tag-list" aria-label="Hybrid Switch Platform focus areas"><span>BIN Routing</span><span>Failover</span><span>Stand-In</span><span>Reversals</span></div><div class="text-links"><a href="https://github.com/vishchandran/hybrid-switch-platform">View repository</a></div></div>
         </article>
         <article class="system-row" aria-labelledby="partner-title">
-          <div class="system-heading"><span class="system-number">03</span><div><h3 id="partner-title">Partner Integration Platform</h3><p>Partner Onboarding &amp; Enterprise Integration</p><span class="text-status">Independent project · Active / evolving</span></div></div>
+          <div class="system-heading"><div><h3 id="partner-title">Partner Integration Platform</h3><p>Partner Onboarding &amp; Enterprise Integration</p><span class="text-status">Independent project · Active / evolving</span></div></div>
           <div class="system-content"><p>An integration project connecting external partner onboarding, API connectivity, testing, certification, lifecycle state, Kafka events, transactional outbox, retry/DLQ handling, audit history, and production readiness.</p><div class="tag-list" aria-label="Partner Integration Platform focus areas"><span>Partner Lifecycle</span><span>Kafka</span><span>Outbox / DLQ</span><span>Audit History</span></div><div class="text-links"><a href="https://github.com/vishchandran/partner-integration-platform">View repository</a></div></div>
         </article>
       </div>
@@ -99,8 +99,8 @@
   <section class="reasoning-wrap" id="architecture" aria-labelledby="reasoning-title">
     <div class="container reasoning-grid">
       <div><p class="eyebrow">Architecture &amp; Program Reasoning</p><h2 id="reasoning-title">Architecture Drills</h2><h3>System Design &amp; Distributed Systems</h3><p class="text-status">Independent program · Ongoing curriculum · Code-free</p><p>A structured architecture program for reasoning through distributed systems, trade-offs, reliability, security, observability, failure modes, constraint mutation, AI intersection, and production readiness.</p><div class="actions"><a class="button secondary" href="https://github.com/vishchandran/arch-drills">View Architecture Drills</a></div></div>
-      <div class="reasoning-method"><p class="small-label">The reasoning loop</p><ol><li><span>01</span><div><strong>Frame the system</strong><p>Requirements, boundaries, constraints, and decisions</p></div></li><li><span>02</span><div><strong>Challenge the design</strong><p>Trade-offs, failure modes, security, and constraint mutation</p></div></li><li><span>03</span><div><strong>Translate into delivery</strong><p>Workstreams, dependencies, risks, rollout, and readiness</p></div></li></ol></div>
-      <div class="program-signal reasoning-signal"><strong>Program lens</strong><span>Workstreams · Cross-team dependencies · Program risks · Constraint mutation · Production readiness</span></div>
+      <div class="reasoning-method"><p class="small-label">The reasoning loop</p><ol><li><div><strong>Frame the system</strong><p>Requirements, boundaries, constraints, and decisions</p></div></li><li><div><strong>Challenge the design</strong><p>Trade-offs, failure modes, security, and constraint mutation</p></div></li><li><div><strong>Translate into delivery</strong><p>Workstreams, dependencies, risks, rollout, and readiness</p></div></li></ol></div>
+      <div class="program-signal reasoning-signal"><strong>Program lens</strong><span class="signal-items"><span>Workstreams</span><span>Cross-team dependencies</span><span>Program risks</span><span>Constraint mutation</span><span>Production readiness</span></span></div>
     </div>
   </section>
 

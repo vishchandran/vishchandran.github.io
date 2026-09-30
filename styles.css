@@ -29,3 +29,16 @@
 @media(min-width:761px){
   .flagship-copy{transform:translateY(-8px)}
 }
+
+/* Number-free content rows */
+.epos-pillars>div,.system-heading,.reasoning-method li{display:block;padding-left:0}
+.epos-pillars strong,.epos-pillars p{grid-column:auto;grid-row:auto}
+.shared-signal>strong{white-space:nowrap}
+
+@media(min-width:761px){
+  .shared-signal{grid-template-columns:max-content 1fr}
+}
+
+.signal-items{display:flex;flex-wrap:wrap;gap:8px 36px}
+.signal-items>span{position:relative}
+.signal-items>span+span::before{content:"·";position:absolute;left:-20px}
