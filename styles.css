@@ -69,7 +69,13 @@
 .applied-heading>.heading-stack{gap:10px}
 .hero h1 .hero-line{color:var(--ink)}
 .hero h1 .hero-accent{color:var(--blue)}
+.flagship-copy .heading-stack h2{transform:translateX(-3px)}
 
 @media(min-width:761px){
   .hero-line{display:block}
+  .hero-line:first-child{transform:translateX(-1px)}
+}
+
+@media(max-width:760px){
+  .flagship-copy .heading-stack h2{transform:translateX(-2px)}
 }
