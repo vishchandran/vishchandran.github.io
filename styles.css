@@ -43,5 +43,22 @@
 .signal-items>span{position:relative}
 .signal-items>span+span::before{content:"·";position:absolute;left:-20px}
 
-/* Optical heading alignment */
-.leadership .section-intro h2{margin-left:-1px}
+/* Consistent left edge for heading and subheading stacks */
+.hero>.eyebrow,.hero>h1,.hero>.domains,.hero>.hero-copy,
+.work-intro .eyebrow,.work-intro h2,
+.flagship-copy>h2,.flagship-copy>.acronym-expansion,.flagship-copy>h3,.flagship-copy>p,
+.applied-heading .eyebrow,.applied-heading h2,
+.system-heading h3,.system-heading h3+p,.system-heading .text-status,
+.reasoning-grid>div:first-child .eyebrow,.reasoning-grid>div:first-child h2,.reasoning-grid>div:first-child h3,
+.reasoning-method strong,.reasoning-method p,
+.leadership .eyebrow,.leadership h2,
+.leadership-grid h3,.leadership-grid ul,
+.experience-intro .eyebrow,.experience-intro h2,
+.experience-heading .experience-context,.experience-heading h3,.experience-heading .experience-budget,
+.about .eyebrow,.about h2,.about-role{
+  margin-left:0;
+  padding-left:0;
+  text-indent:0;
+}
+
+.applied-heading .eyebrow,.applied-heading h2{justify-self:start}
