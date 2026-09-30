@@ -6,3 +6,14 @@
 @media print{.site-header,.actions,.button,.menu-toggle,.site-footer{display:none}body{font-size:11pt}.container{width:100%}.hero,.section,.about{padding-block:20px}.independent-wrap,.reasoning-wrap,.experience-wrap{background:white}.hero h1{font-size:30pt}.flagship-grid,.system-row,.experience-brief{break-inside:avoid}.architecture{box-shadow:none}}
 
 .experience-note{color:#53677f}
+
+/* Hero spacing refinement */
+.hero{padding-top:60px}
+.evidence-strip>div+div{padding-left:54px}
+.evidence-strip>div+div span{left:20px}
+
+@media(max-width:760px){
+  .hero{padding-top:36px}
+  .evidence-strip>div+div{padding-left:32px}
+  .evidence-strip>div+div span{left:0}
+}
