@@ -1,17 +1,17 @@
 # Vishnu Chandran — Technical Program Leadership
 
-Responsive static portfolio for Staff Technical Program Management across payments, distributed systems, and enterprise modernization.
+Responsive static portfolio for Technical Program Leadership across payments, distributed systems, and enterprise modernization.
 
 **Website:** https://vishchandran.github.io/
 
 ## Content
 
-- EPOS — Banking Engineering from First Principles (ongoing flagship)
+- EPOS — Enterprise Platform Operating System (ongoing independent flagship)
 - Applied Systems: Payment Simulator, Hybrid Switch Platform, Partner Integration Platform
 - Architecture Drills — System Design & Distributed Systems
-- Technical Leadership, Professional Experience, and profile links
+- Technical Program Leadership, sanitized Professional Experience, and profile links
 
-Project summaries are grounded in the respective repository READMEs. Detailed architecture and program evidence stays in those repositories. EPOS is an incremental learning and engineering program; the applied systems are evolving simulators, not claims of production deployments.
+Project summaries are grounded in the respective repository READMEs. Detailed architecture and program evidence stays in those repositories. EPOS is an incremental independent banking engineering program; the applied systems are evolving simulators and technical projects, separate from professional experience and not claims of production deployments.
 
 ## Edit and preview
 
