@@ -79,3 +79,26 @@
 @media(max-width:760px){
   .flagship-copy .heading-stack h2{transform:translateX(-2px)}
 }
+
+
+/* Business context and implementation evidence */
+.thinking-path{display:flex;flex-wrap:wrap;gap:10px 28px;list-style:none;margin:36px 0 0;padding:22px 0 0;border-top:1px solid var(--line);color:var(--muted);font-size:.8125rem}
+.thinking-path li{position:relative}
+.thinking-path li+li::before{content:'→';position:absolute;left:-20px;color:var(--blue)}
+.progress-evidence p{font-size:.875rem;margin:0 0 10px}
+.progress-evidence a{font-size:.8125rem;font-weight:600}
+.progress-evidence strong{font-size:inherit;color:var(--ink)}
+.project-narrative{margin:0;display:grid;grid-template-columns:1fr;gap:4px}
+.project-narrative dt{font-size:.8125rem;font-weight:650;color:var(--ink)}
+.project-narrative dd{margin:0 0 14px;color:var(--muted);font-size:.9375rem;line-height:1.7}
+.project-narrative dd:last-child{margin-bottom:0}
+.experience-copy>p,.experience-copy details p{font-size:.9375rem;line-height:1.8}
+.experience-copy details{margin-top:16px;border-top:1px solid #cad6e4;padding-top:12px}
+.experience-copy summary{cursor:pointer;color:var(--blue);font-size:.875rem;font-weight:600;line-height:1.5}
+.experience-copy details p{margin-top:12px}
+summary:focus-visible{outline:3px solid #2663db;outline-offset:5px}
+.about-copy>p+p{margin-top:16px}
+.leadership-grid li{padding-bottom:12px}
+.hero h1 .hero-line.hero-accent{color:var(--blue)}
+@media(max-width:760px){.thinking-path{display:grid;grid-template-columns:1fr 1fr;gap:10px 20px}.thinking-path li{padding-left:16px}.thinking-path li::before,.thinking-path li+li::before{content:'→';left:0}.leadership-grid ul{grid-template-columns:1fr}.project-narrative dd{font-size:1rem}}
+@media print{details{display:block}}
