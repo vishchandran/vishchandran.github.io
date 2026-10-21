@@ -5,6 +5,52 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 @media print{.site-header,.actions,.button,.menu-toggle,.site-footer{display:none}body{font-size:11pt}.container{width:100%}.hero,.section,.about{padding-block:20px}.independent-wrap,.reasoning-wrap,.experience-wrap{background:white}.hero h1{font-size:30pt}.flagship-grid,.system-row,.experience-brief{break-inside:avoid}.architecture{box-shadow:none}}
 
+/* Portfolio narrative order */
+main{display:flex;flex-direction:column}
+#home{order:0}
+#experience{order:1}
+#work{order:2}
+#architecture{order:3}
+#leadership{order:4}
+#about{order:5}
+.applied-list{display:flex;flex-direction:column}
+.applied-list [aria-labelledby="switch-title"]{order:1}
+.applied-list [aria-labelledby="payment-title"]{order:2}
+.applied-list [aria-labelledby="partner-title"]{order:3}
+
+/* Professional introduction aligns to the main heading row. */
+.experience-intro{grid-template-rows:auto auto;column-gap:80px;row-gap:0;align-items:start}
+.experience-intro>div{display:contents}
+.experience-intro .eyebrow{grid-column:1;grid-row:1}
+.experience-intro h2{grid-column:1;grid-row:2}
+.experience-intro>p{grid-column:2;grid-row:2;margin-top:16px}
+
+/* Flagship title hierarchy */
+.flagship-copy h2{font-size:clamp(2rem,3.2vw,2.75rem)}
+.flagship-copy .acronym-expansion{margin-top:5px;color:#536a87;font-size:.875rem;font-weight:500;letter-spacing:0}
+.epos-descriptor{margin-top:10px;color:#294a77;font-size:1.25rem;font-weight:650;line-height:1.3}
+
+@media(max-width:1000px){
+  .experience-intro{column-gap:44px}
+}
+
+@media(max-width:760px){
+  .experience-intro{row-gap:19px}
+  .experience-intro>div{display:block}
+  .experience-intro .eyebrow,.experience-intro h2,.experience-intro>p{grid-column:auto;grid-row:auto}
+  .experience-intro>p{margin-top:0}
+  .flagship-copy h2{font-size:clamp(2rem,10vw,2.75rem)}
+}
+
+/* Clear, compact transition from leadership to About. */
+#leadership{padding-bottom:40px}
+.about{align-items:start;padding-top:40px;border-top:1px solid var(--line)}
+
+@media(max-width:760px){
+  #leadership{padding-bottom:32px}
+  .about{padding-top:32px;padding-bottom:50px}
+}
+
 .experience-note{color:#53677f}
 
 /* Hero spacing refinement */

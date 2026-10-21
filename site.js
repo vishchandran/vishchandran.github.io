@@ -1,5 +1,16 @@
 'use strict';
 document.documentElement.classList.add('js');
+const main = document.querySelector('main');
+const professionalWork = document.querySelector('#experience');
+const independentWork = document.querySelector('#work');
+main.insertBefore(professionalWork, independentWork);
+
+const appliedProjects = document.querySelector('.applied-list');
+const hybridSwitch = document.querySelector('[aria-labelledby="switch-title"]');
+const paymentSimulator = document.querySelector('[aria-labelledby="payment-title"]');
+const partnerIntegration = document.querySelector('[aria-labelledby="partner-title"]');
+appliedProjects.append(hybridSwitch, paymentSimulator, partnerIntegration);
+
 const menu = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
 menu.hidden = false;
