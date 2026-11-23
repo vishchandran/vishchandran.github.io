@@ -6,14 +6,13 @@ Website: https://vishchandran.github.io/
 
 ## Content and evidence
 
-- Professional experience is grounded in the finalized October 21, 2026 resume. Program budgets describe scope; copy preserves the candidate's actual role, outcomes and implementation status.
 - Payment Processing Simulator, Hybrid Switch Platform and Partner Integration Platform each connect a business problem to an approach, trade-offs and delivery/operational considerations. They are independent learning systems, not production deployments.
 - Architecture Drills remain code-free exercises, separate from implemented projects.
 - Original repository, architecture, GitHub, LinkedIn and email links are retained.
 
 ## Edit and preview
 
-Edit `index.html` for content, `styles.css` for presentation, and `site.js` for mobile navigation. No build dependencies, analytics, external fonts or backend services are required.
+Edit `index.html` for content, `styles.css` for presentation, and `site.js` for mobile navigation. The site has no build dependencies, external fonts or backend services; Google Analytics 4 is loaded directly from `index.html`.
 
 ```sh
 python3 -m http.server 4173 --bind 127.0.0.1
