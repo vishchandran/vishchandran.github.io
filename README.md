@@ -10,16 +10,6 @@ Website: https://vishchandran.github.io/
 - Architecture Drills remain code-free exercises, separate from implemented projects.
 - Original repository, architecture, GitHub, LinkedIn and email links are retained.
 
-## Edit and preview
-
-Edit `index.html` for content, `styles.css` for presentation, and `site.js` for mobile navigation. The site has no build dependencies, external fonts or backend services; Google Analytics 4 is loaded directly from `index.html`.
-
-```sh
-python3 -m http.server 4173 --bind 127.0.0.1
-```
-
-Open http://127.0.0.1:4173/.
-
 ## Publication
 
 GitHub Pages serves the repository root on `main`; `.nojekyll` enables direct static-file serving. A push to `main` can publish the site. This local proposal must be reviewed and explicitly approved by the owner before pushing, merging or deploying.
