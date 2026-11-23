@@ -5,19 +5,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
 @media print{.site-header,.actions,.button,.menu-toggle,.site-footer{display:none}body{font-size:11pt}.container{width:100%}.hero,.section,.about{padding-block:20px}.independent-wrap,.reasoning-wrap,.experience-wrap{background:white}.hero h1{font-size:30pt}.flagship-grid,.system-row,.experience-brief{break-inside:avoid}.architecture{box-shadow:none}}
 
-/* Portfolio narrative order */
-main{display:flex;flex-direction:column}
-#home{order:0}
-#experience{order:1}
-#work{order:2}
-#architecture{order:3}
-#leadership{order:4}
-#about{order:5}
-.applied-list{display:flex;flex-direction:column}
-.applied-list [aria-labelledby="switch-title"]{order:1}
-.applied-list [aria-labelledby="payment-title"]{order:2}
-.applied-list [aria-labelledby="partner-title"]{order:3}
-
 /* Professional introduction aligns to the main heading row. */
 .experience-intro{grid-template-rows:auto auto;column-gap:80px;row-gap:0;align-items:start}
 .experience-intro>div{display:contents}
@@ -209,55 +196,52 @@ main{display:flex;flex-direction:column}
   .about{padding-top:24px;padding-bottom:var(--space-section-mobile)}
 }
 
-/* One editorial grid for every Independent Projects content block. */
-.editorial-grid{
+/* Independent Projects: one shared editorial grid and compact rhythm. */
+.independent-wrap{padding:52px 0}
+.independent-wrap .editorial-grid{
   display:grid;
-  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+  grid-template-columns:minmax(0,2fr) minmax(0,3fr);
   column-gap:64px;
   align-items:start;
 }
-
-.editorial-intro{
-  grid-template-rows:auto auto;
-  row-gap:12px;
-}
-
-.editorial-intro>.heading-stack{display:contents}
-.editorial-intro .eyebrow{grid-column:1;grid-row:1;margin-bottom:0}
-.editorial-intro h2{grid-column:1;grid-row:2}
-.editorial-intro>p{grid-column:2;grid-row:2;max-width:none;font-size:1rem;line-height:1.65}
-
-.work-intro{padding-bottom:20px}
-.work-intro h2{font-size:clamp(2rem,2.6vw,2.25rem);line-height:1.18}
-.applied-heading{padding-top:24px}
-.applied-heading>.heading-stack{gap:0}
-.applied-heading h2{font-size:clamp(1.625rem,2.1vw,1.75rem);line-height:1.22}
-.applied-list{margin-top:24px}
-.system-row{gap:64px;padding:20px 0}
-.system-heading h3{font-size:clamp(1.375rem,1.8vw,1.5rem);line-height:1.28}
-.system-heading p{font-size:1rem;line-height:1.6}
-.project-narrative{gap:0}
-.project-narrative dt{margin-bottom:8px;font-size:.9375rem;line-height:1.4}
-.project-narrative dd{margin-bottom:20px;font-size:1rem;line-height:1.65}
+.independent-wrap .editorial-intro{grid-template-rows:auto auto;row-gap:14px}
+.independent-wrap .editorial-intro>.heading-stack{display:contents}
+.independent-wrap .editorial-intro .eyebrow{grid-column:1;grid-row:1;margin:0}
+.independent-wrap .editorial-intro h2{grid-column:1;grid-row:2}
+.independent-wrap .editorial-intro>p{grid-column:2;grid-row:2;max-width:none}
+.independent-wrap .work-intro{margin:0;padding:0;border:0}
+.independent-wrap .work-intro h2{font-size:clamp(2rem,2.5vw,2.25rem);line-height:1.18}
+.independent-wrap .work-intro>p{font-size:1rem;line-height:1.6}
+.independent-wrap .applied-list{margin-top:36px}
+.independent-wrap .system-row{gap:64px;padding:36px 0;border-top:1px solid var(--line);border-bottom:0}
+.independent-wrap .system-row:first-child{padding-top:0;border-top:0}
+.independent-wrap .system-row:last-child{padding-bottom:0}
+.independent-wrap .system-heading h3{margin:0 0 8px;font-size:clamp(1.375rem,1.7vw,1.5rem);line-height:1.25}
+.independent-wrap .system-heading p{font-size:1rem;line-height:1.55}
+.independent-wrap .system-heading .text-status{margin-top:10px}
+.independent-wrap .project-narrative{gap:0}
+.independent-wrap .project-narrative dt{margin:0 0 8px;font-size:.9375rem;line-height:1.4}
+.independent-wrap .project-narrative dd{margin:0 0 20px;font-size:1rem;line-height:1.6}
+.independent-wrap .project-narrative dd:last-child{margin-bottom:0}
 
 @media(max-width:1000px) and (min-width:761px){
-  .editorial-grid{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);column-gap:44px}
-  .system-row{gap:44px}
+  .independent-wrap .editorial-grid{column-gap:44px}
+  .independent-wrap .system-row{gap:44px}
 }
 
 @media(max-width:760px){
-  .editorial-grid{grid-template-columns:1fr;gap:20px}
-  .editorial-intro{grid-template-rows:auto}
-  .editorial-intro>.heading-stack{display:flex;gap:12px}
-  .editorial-intro .eyebrow,.editorial-intro h2,.editorial-intro>p{grid-column:auto;grid-row:auto}
-  .work-intro{padding-bottom:20px}
-  .work-intro h2{font-size:clamp(1.875rem,9vw,2.125rem)}
-  .applied-heading{padding-top:24px}
-  .applied-heading h2{font-size:clamp(1.5rem,7.5vw,1.75rem)}
-  .system-row{gap:18px;padding:18px 0}
-  .system-heading h3{font-size:1.375rem}
-  .project-narrative dt{margin-bottom:8px}
-  .project-narrative dd{margin-bottom:20px}
+  .independent-wrap{padding:48px 0}
+  .independent-wrap .editorial-grid{grid-template-columns:1fr;gap:20px}
+  .independent-wrap .editorial-intro{grid-template-rows:auto;gap:12px}
+  .independent-wrap .editorial-intro>.heading-stack{display:flex;gap:12px}
+  .independent-wrap .editorial-intro .eyebrow,
+  .independent-wrap .editorial-intro h2,
+  .independent-wrap .editorial-intro>p{grid-column:auto;grid-row:auto}
+  .independent-wrap .work-intro h2{font-size:clamp(1.875rem,9vw,2.125rem)}
+  .independent-wrap .applied-list{margin-top:36px}
+  .independent-wrap .system-row{gap:18px;padding:32px 0}
+  .independent-wrap .system-row:first-child{padding-top:0}
+  .independent-wrap .system-heading h3{font-size:1.375rem}
 }
 
 /* Architecture Drills: compact, top-aligned two-column composition. */
